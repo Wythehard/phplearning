@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "command": "msbuild",
+    "args": [
+        // Ask msbuild to generate full paths for file names.
+        "/property:GenerateFullPaths=true"
+    ],
+   
+    
+    "version": "0.1.0",
+    "command": "Chrome",
+    "osx": {
+        "command": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+    },
+    "args": [
+        "www.wulinzhen.com/${relativeFile}"
+    ]
+
+    
+}
