@@ -15,6 +15,7 @@
     if($result){
         echo mysql_error();
     }
+    
 ?>
 <table>
 <tr>
