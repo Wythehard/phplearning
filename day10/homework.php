@@ -6,6 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="./main.js"></script>
     <title>Document</title>
+    <style>
+    .data{
+        padding:0;
+        margin:0;
+        text-align:center;
+        border:0;
+        
+    }
+    .gray{
+        background-color:#ccc;
+    }
+    </style>
 </head>
 <body>
 <h4>添加数据</h4>
@@ -115,7 +127,7 @@ $datacount = mysql_num_rows($result);
 
 ?>
 
-<table>
+<table class='data'>
     <tbody>
     <?php 
         for ($i=0;$i<$fieldcount;++$i)
@@ -135,9 +147,9 @@ $datacount = mysql_num_rows($result);
                 echo "<tr>";
             for ($j=0;$j<$fieldcount;$j++)
             {
-                echo "<th>";
+                echo "<td>";
                 echo $info[$j];
-                echo "</th>";
+                echo "</td>";
             }
             echo "<td>";
 
