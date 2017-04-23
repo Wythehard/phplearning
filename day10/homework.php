@@ -150,10 +150,14 @@ $datacount = mysql_num_rows($result);
                 echo "<td>";
                 echo $info[$j];
                 echo "</td>";
+                
             }
-            echo "<td>";
-
-           
+                echo "<td>";
+                echo "<a href='deletedb.php?id=$info[0]'>删除</a>";
+                echo "</td>";
+                echo "<td>";
+                echo "<a href='update.php?id=$info[0]'>修改</a>";
+                echo "</td>";
         }
     ?>
 
