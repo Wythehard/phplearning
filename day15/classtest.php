@@ -1,4 +1,6 @@
+
 <?php
+phpinfo();
 class root{
 
     public $v1 = '我是基类';
@@ -18,9 +20,12 @@ class childclass extends parentclass{
     public $v3 = '我是派生类';
     public function showinfo(){
         echo $this->v3;
-        parent->parent::showinfo();
+
         
     }
 }
 $c1 = new childclass();
+echo 'aaa';
 $c1->showinfo();
+$c1->muu();
+?>
